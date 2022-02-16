@@ -2,7 +2,11 @@
 .DS_Store
 .gitkeep
 
+bin/*
 vendor/
-bin/
 tmp/
 logs/
+!/bin/run.sh
+
+
+
