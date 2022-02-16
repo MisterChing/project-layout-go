@@ -1,0 +1,104 @@
+# 运行环境，监听端口
+[server]
+name = "project-layout-go"
+environment = "test"
+addr = ":8099"
+
+# 日志配置
+[log]
+# 日志输出目录，默认当前项目目录的logs目录
+path = ""
+
+#
+# 是否打开pprof性能分析
+#
+[pprof]
+enable = true
+
+#
+# 数据库配置
+#
+# maxidleconns 最大空闲连接数
+# maxopenconns 最大连接数
+# connmaxlifetime 连接生存周期（秒），超过该时间，连接在复用前将会被懒关闭，Expired connections may be closed lazily before reuse.
+[[mysql]]
+name = "aaa"
+[mysql.master]
+dsn = "root:test123@tcp(10.90.100.199:8809)/ching?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai"
+maxidleconns = "10"
+maxopenconns = "200"
+connmaxlifetime = "450"
+[mysql.slave]
+dsn = "root:test123@tcp(10.90.100.199:8809)/ching?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai"
+maxidleconns = "10"
+maxopenconns = "200"
+connmaxlifetime = "450"
+
+
+[[mysql]]
+name = "bbb"
+[mysql.master]
+dsn = "root:test123@tcp(10.90.100.199:8809)/ching?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai"
+maxidleconns = "10"
+maxopenconns = "200"
+connmaxlifetime = "450"
+[mysql.slave]
+dsn = "root:test123@tcp(10.90.100.199:8809)/ching?charset=utf8mb4&parseTime=true&loc=Asia%2FShanghai"
+maxidleconns = "10"
+maxopenconns = "200"
+connmaxlifetime = "450"
+
+##
+## Redis配置
+##
+## maxconns redis连接池最大连接数
+## minidle redis连接池最小空闲连接数
+## conntimeoutms redis连接超时（毫秒）
+## readtimeoutms redis读超时（毫秒）
+## writetimeoutms redis写超时（毫秒）
+[[redis]]
+name = "redis_aaa"
+[redis.master]
+host = "10.90.100.199"
+port = "6379"
+password = "test123"
+database = 0
+maxconns = 200
+minidle = 10
+conntimeoutms = 1000
+readtimeoutms = 1000
+writetimeoutms = 1000
+[redis.slave]
+host = "10.90.100.199"
+port = "6379"
+password = "test123"
+database = 0
+maxconns = 200
+minidle = 10
+conntimeoutms = 1000
+readtimeoutms = 1000
+writetimeoutms = 1000
+
+
+[[redis]]
+name = "redis_bbb"
+[redis.master]
+host = "10.90.100.199"
+port = "6379"
+password = "test123"
+database = 0
+maxconns = 200
+minidle = 10
+conntimeoutms = 1000
+readtimeoutms = 1000
+writetimeoutms = 1000
+[redis.slave]
+host = "10.90.100.199"
+port = "6379"
+password = "test123"
+database = 0
+maxconns = 200
+minidle = 10
+conntimeoutms = 1000
+readtimeoutms = 1000
+writetimeoutms = 1000

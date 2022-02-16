@@ -1,0 +1,8 @@
+.idea/
+.DS_Store
+.gitkeep
+
+vendor/
+bin/
+tmp/
+logs/
