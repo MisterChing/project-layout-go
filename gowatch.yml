@@ -26,7 +26,7 @@ build_args:
   #- '-gcflags'
   #- '-N'
   #    - -race
-  - cmd/http/main.go
+  - cmd/project-layout-go/main.go
 
 # Need to increase environment variables, the current environment variables are loaded by default
 envs:
