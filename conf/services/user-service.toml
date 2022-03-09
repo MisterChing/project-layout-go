@@ -1,0 +1,20 @@
+[service]
+name = "user-service"
+
+[endpoint]
+[endpoint.product]
+host = "http://localhost:8080"
+timeout = "5s"
+
+[endpoint.gray]
+host = "http://localhost:8080"
+timeout = "5s"
+
+[endpoint.test]
+host = "http://localhost:8080"
+timeout = "5s"
+switch = false
+
+[endpoint.develop]
+host = "http://localhost:8080"
+timeout = "5s"

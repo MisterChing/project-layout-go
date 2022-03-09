@@ -58,6 +58,10 @@ func main() {
 		Handler: engine,
 	}
 	debugutil.DebugPrint(srv, 0)
+	aa := config.GetServiceEndpoint("user-service")
+	debugutil.DebugPrint(aa, 0)
+	debugutil.DebugPrint(aa.GetBool("switch"), 0)
+	debugutil.DebugPrint(aa.GetString("switch"), 0)
 
 	// Start Server
 	go func() {
