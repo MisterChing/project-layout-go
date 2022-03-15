@@ -7,6 +7,4 @@ vendor/
 tmp/
 logs/
 !/bin/run.sh
-
-
-
+script/gormt/model/
