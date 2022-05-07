@@ -1,8 +1,9 @@
 package main
 
 import (
-	"github.com/go-resty/resty/v2"
 	"project-layout-go/pkg/utils/debugutil"
+
+	"github.com/go-resty/resty/v2"
 )
 
 func main() {

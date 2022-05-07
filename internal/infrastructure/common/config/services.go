@@ -1,10 +1,11 @@
 package config
 
 import (
-	"github.com/spf13/cast"
 	"io/ioutil"
 	"project-layout-go/internal/infrastructure/bootstrap"
 	"project-layout-go/pkg/configx"
+
+	"github.com/spf13/cast"
 )
 
 var (
